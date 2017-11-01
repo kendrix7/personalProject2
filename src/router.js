@@ -11,7 +11,7 @@ import Edit from './components/Edit/Edit';
 
 export default (
     <Switch>
-        <Route path='/home' component={Home2} />
+        <Route path='/home2' component={Home2} />
         <Route path='/calendar' component={Calendar} />
         <Route path='/about' component={About} />
         <Route path='/cart' component={Cart} />

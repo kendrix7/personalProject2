@@ -35,7 +35,8 @@ passport.use(new Auth0Strategy({
     db.find_user([userData.identities[0].user_id])
         .then((user) => {
             if (user[0]) {
-                return done(null, user[0].id);
+                // console.log(user[0]);
+                return done(null, user[0].user_id);
             } else {
                 db.create_user([
                     userData.given_name,
@@ -44,7 +45,7 @@ passport.use(new Auth0Strategy({
                     userData.picture,
                     userData.identities[0].user_id
                 ]).then((user) => {
-                    return done(null, user[0].id);
+                    return done(null, user[0].user_id);
                 })
             }
         });
