@@ -1,0 +1,6 @@
+.home_main_container {
+   height: 80vh;
+   width: 100%;
+   background-image: url(../../assets/landing_home.jpg);
+   background-size: cover;
+}
