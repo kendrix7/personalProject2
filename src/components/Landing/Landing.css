@@ -11,9 +11,11 @@
 }
 
 .landing_title {
+    height: 300px;
     width: 300px;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     font-size: 3em;
+    font-weight: 600;
     color: #fdfefd;
 }
 

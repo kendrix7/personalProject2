@@ -37,7 +37,7 @@ export default class Header extends Component {
                     open={this.state.open}
                     onRequestChange={(open) => this.setState({ open })}
                     containerStyle={{
-                        "background-color": "#0b132b"
+                        "backgroundColor": "#0b132b"
                     }}
                 >
                     <Link to='/home'>
