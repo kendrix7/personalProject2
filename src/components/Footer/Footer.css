@@ -1,5 +1,80 @@
 .footer_main_container {
     width: 100%;
     height: 30vh;
-    background: lightgray;
+    background: #fdfefd;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer_logo_container {
+    height: 60px;
+    width: 150px;
+
+    color: rgb(255, 123, 0);
+    font-size: 2.5em;
+    font-weight: 600;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+.logo_box {
+    height: 50px;
+    width: 100px;
+    border-style: solid;
+    border-color: #383d3b;
+    border-width: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telephone_container {
+    height: 18px;
+    width: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.email_container {
+    height: 18px;
+    width: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social_media_container {
+    height: 30px;
+    width: 150px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.facebook img {
+    height: 32px;
+    width: 32px;
+}
+
+.twitter img {
+    height: 32px;
+    width: 32px;
+}
+
+.linkedIn img {
+    height: 32px;
+    width: 32px;
 }

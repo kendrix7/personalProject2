@@ -14,7 +14,7 @@
     width: 300px;
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     font-size: 3em;
-    color: white;
+    color: #fdfefd;
 }
 
 .landing_sign_in_button {
@@ -23,12 +23,16 @@
     margin: auto;
     display: block;
     margin-top: 30px;
-    background-color: orange;
+    background-color: rgb(255, 123, 0);
     border-radius: 5px;
     border-width: 0;
     text-decoration: none;
-    color: white;
+    color: #fdfefd;
     font-size: 1.5em;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fdfefd;
 }
 
 a {

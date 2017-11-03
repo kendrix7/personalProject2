@@ -19,11 +19,16 @@ export default class Header extends Component {
     render() {
         return (
             <header className='header_main_container'>
-                <Link to='/home'><div className='logo_home_button on' Click={this.sendToHome}>
-
-                </div></Link>
-                <div className='hamburger_menu'onClick={this.handleToggle}>
-                <MDMenu size={40}/>                    
+                <div className='header_content'>
+                    <Link to='/home'>
+                        <div className='logo_home_button'>
+                            <div className='header_logo_button_content'>CCP</div>
+                            <div className='header_logo_text'>Custom College Prep</div>
+                        </div>
+                    </Link>
+                    <div className='hamburger_menu' onClick={this.handleToggle}>
+                        <MDMenu size={50} />
+                    </div>
                 </div>
                 <Drawer
                     docked={false}
@@ -31,14 +36,31 @@ export default class Header extends Component {
                     width={200}
                     open={this.state.open}
                     onRequestChange={(open) => this.setState({ open })}
+                    containerStyle={{
+                        "background-color": "#0b132b"
+                    }}
                 >
-                    <Link to='/home'><MenuItem onClick={this.handleClose}>Home</MenuItem></Link>
-                    <Link to='/about'><MenuItem onClick={this.handleClose}>About</MenuItem></Link>
-                    <Link to='/calendar'><MenuItem onClick={this.handleClose}>Calendar</MenuItem></Link>
-                    <Link to='/cart'><MenuItem onClick={this.handleClose}>Cart</MenuItem></Link>
-                    <Link to='/contact'><MenuItem onClick={this.handleClose}>Contact</MenuItem></Link>
-                    <Link to='/profile'><MenuItem onClick={this.handleClose}>Profile</MenuItem></Link>
-                    <a href={process.env.REACT_APP_LOGIN}><MenuItem onClick={this.handleClose}>Sign In</MenuItem></a>
+                    <Link to='/home'>
+                        <MenuItem style={{ "color": "#fdfefd" }} onClick={this.handleClose}>Home</MenuItem>
+                    </Link>
+                    <Link to='/about'>
+                        <MenuItem style={{ "color": "#fdfefd" }} onClick={this.handleClose}>About</MenuItem>
+                    </Link>
+                    <Link to='/calendar'>
+                        <MenuItem style={{ "color": "#fdfefd" }} onClick={this.handleClose}>Calendar</MenuItem>
+                    </Link>
+                    <Link to='/cart'>
+                        <MenuItem style={{ "color": "#fdfefd" }} onClick={this.handleClose}>Cart</MenuItem>
+                    </Link>
+                    <Link to='/contact'>
+                        <MenuItem style={{ "color": "#fdfefd" }} onClick={this.handleClose}>Contact</MenuItem>
+                    </Link>
+                    <Link to='/profile'>
+                        <MenuItem style={{ "color": "#fdfefd" }} onClick={this.handleClose}>Profile</MenuItem>
+                    </Link>
+                    <a href={process.env.REACT_APP_LOGIN}>
+                        <MenuItem style={{ "color": "#fdfefd" }} onClick={this.handleClose}>Sign In</MenuItem>
+                    </a>
                 </Drawer>
             </header>
         )
