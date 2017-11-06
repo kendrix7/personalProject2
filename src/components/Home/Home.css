@@ -71,3 +71,83 @@
     text-align: center;
     color: #383d3b;
 }
+
+.home_pricing_container {
+    width: 100%;
+    height: 600px;
+    background: #0b132b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_pricing_inner_box {
+    width: 80%;
+    height: 80%;
+    border-style: solid;
+    border-color: #fdfefd;
+    color: #fdfefd;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home_pricing_inner_box p {
+    width: 90%;
+}
+
+.home_pricing_private {
+    color: #bf3100;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.home_pricing_tutoring {
+    margin-top: 0;
+    font-weight: 300;
+
+}
+
+.home_pricing_filler {
+    width: 90%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #383d3b;
+}
+
+.home_pricing_price_box {
+    display: flex;
+    flex-direction: row;
+}
+
+.sixty {
+    font-size: 2em;
+    margin: 10px 5px;
+    color: #bf3100;
+}
+
+.perHour {
+    padding-top: 9px;
+    margin: 10px 5px;
+    vertical-align: bottom; 
+}
+
+.home_pricing_button {
+    width: 270px;
+    height: 60px;
+    margin: auto;
+    display: block;
+    background-color: rgb(255, 123, 0);
+    border-radius: 5px;
+    border-width: 0;
+    text-decoration: none;
+    color: #fdfefd;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fdfefd;
+}

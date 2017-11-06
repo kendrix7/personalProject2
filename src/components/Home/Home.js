@@ -39,6 +39,36 @@ export default class Home extends Component {
                     </div>
                 </div>
 
+                <div className='home_pricing_container'>
+                    <div className='home_pricing_inner_box'>
+                        <h2 className='home_pricing_private'>PRIVATE</h2>
+                        <h2 className='home_pricing_tutoring'>TUTORING</h2>
+                        <p>One on one focus customized to the needs of your student. Whether it's geometry or the science section of the ACT, this is the best way to improve test scores. </p>
+                        <p>Available for Test Preparation or Acadamic Subjects.</p>
+                        <div className='home_pricing_filler'></div>
+                        <div className='home_pricing_price_box'>
+                            <div className='sixty'>$60</div>
+                            <div className='perHour'>/ per hour</div>
+                        </div>
+                        <Link to='/calendar'><button className='home_pricing_button'>Book A Time!</button></Link>
+                    </div>
+                </div>
+
+                <div className='home_pricing_container'>
+                    <div className='home_pricing_inner_box'>
+                        <h2 className='home_pricing_private'>SEMI-PRIVATE</h2>
+                        <h2 className='home_pricing_tutoring'>TUTORING</h2>
+                        <p>You student will gain the test taking skills they need in a small group of two to four students. Great value for friends taking the ACT or SAT on the same day. </p>
+                        <p>Available for Test Preparation.</p>
+                        <div className='home_pricing_filler'></div>
+                        <div className='home_pricing_price_box'>
+                            <div className='sixty'>$30</div>
+                            <div className='perHour'>/ per hour</div>
+                        </div>
+                        <Link to='/calendar'><button className='home_pricing_button'>Book A Time!</button></Link>
+                    </div>
+                </div>
+
             </div>
         )
     }
