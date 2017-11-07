@@ -1,0 +1,55 @@
+.contact_main_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_top_container {
+    height: 80vh;
+    width: 100%;
+    background-image: url(../../assets/marker_table.jpg);
+    background-size: cover;
+    color: #0b132b;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+ }
+
+ .contact_top_container h2 {
+    font-size: 2.5em;
+    font-weight: 800;
+    margin: 0;
+    padding-top: 18px;
+ }
+
+ .contact_top_text_box {
+     display: flex;
+     flex-direction: row;
+ }
+
+ .contact_top_text_box p {
+     margin: 0;
+     padding-top: 10px;
+     padding-right: 10px;
+     padding-bottom: 10px;
+     padding-left: 0px;
+ }
+
+ .contact_days {
+     font-weight: 600;
+ }
+
+ .contact_top_phone {
+     font-size: 1.75em;
+     font-weight: 600;
+     padding-top: 6px;
+ }
+
+ .contact_top_underline {
+     width: 213px;
+     border-style: solid;
+     border-color: #bf3100;
+     border-width: 1px;
+     margin-top: 3px;
+ }
