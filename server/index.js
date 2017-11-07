@@ -13,7 +13,7 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(session({
-    secret: process.env.secret,
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true
 }))

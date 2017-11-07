@@ -1,0 +1,28 @@
+.about_main_container {
+    background: #fdfefd;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_top_container {
+    width: 335px;
+    margin: 10px 20px;
+    color: #0b132b;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_top_how {
+    font-size: 2em;
+    font-weight: 1200;
+}
+
+.about_top_first_p {
+    font-size: 1.2em;
+    font-weight: 800;
+}

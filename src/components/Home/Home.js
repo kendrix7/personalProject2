@@ -25,7 +25,7 @@ export default class Home extends Component {
                     <div className='home_about_text'>
                         <h2>About My Services</h2>
                         <p>
-                            My mission is to provide accurate, relevent advice, guidance, and preparation to students and parents of students trying to prepare for college.
+                            My mission is to provide accurate, relevent advice, guidance, and preparation to students preparing for college and their parents.
                         </p>
                         <p>
                             I was not prepared for college in the 21st century. Most students aren't. We are being prepared by teachers and parents who never attended college in the 21st century and who never faced the challenges of a modern student.

@@ -23,6 +23,10 @@
     font-weight: 600;
 }
 
+.home_top_text_college {
+    color: #0b132b;
+}
+
 .home_top_text_smarter {
     color: #bf3100;
 }
@@ -69,7 +73,7 @@
 
 .home_about_text p {
     text-align: center;
-    color: #383d3b;
+    color: #0b132b;
 }
 
 .home_pricing_container {
