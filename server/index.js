@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express')
     , bodyParser = require('body-parser')
     , cors = require('cors')
@@ -5,9 +7,9 @@ const express = require('express')
     , session = require('express-session')
     , passport = require('passport')
     , Auth0Strategy = require('passport-auth0')
+    , nodemailer = require('nodemailer')
+    , transporter = nodemailer.createTransport('smtps://'+process.env.SMTP_LOGIN+':'+process.env.SMTP_PASSW+'@smtp.mailgun.org')
     , PORT = 7777;
-
-require('dotenv').config();
 
 const app = express();
 
@@ -57,7 +59,7 @@ passport.serializeUser(function (id, done) {
 passport.deserializeUser(function (id, done) {
     app.get('db').find_session_user([id])
         .then((user) => {
-            return done(null, user[0]);
+            return done(null, user[0]); // put on req.user for BACK end use
         })
 })
 
@@ -76,6 +78,30 @@ app.get('/auth/me', (req, res) => {
 app.get('/auth/logout', (req, res) => {
     req.logOut();
     res.redirect(308, 'http://localhost:3000');
+})
+
+//nodemailer
+
+//endpionts
+app.post('/message/submit', (req, res) => {
+    const db = app.get('db');
+    const { parentsFirstName, parentsLastName, parentsEmail, parentsPhone, studentsName, message } = req.body;
+    const mailOptions = {
+        from: '"'+parentsFirstName+'" <'+process.env.TEST_SENDER+'>', // sender address
+        to: process.env.TEST_RECIPIENT, // list of recievers
+        subject: 'Test Mail', // Subject line
+        text: req.body.message, // plaintext body
+        html: '<b>'+req.body.message+'</b>' // html body
+    };
+
+    transporter.sendMail(mailOptions, (err, info) => {
+        if (err) {
+            return console.log(err);
+        }
+        console.log('Message sent: ' + info.response);
+    });
+
+    db.create_message([req.user.user_id, parentsFirstName, parentsLastName, parentsEmail, parentsPhone, studentsName, message]).then((response) => console.log(response));
 })
 
 app.listen(PORT, () => { console.log(`Server listening on port: ${PORT}.`); });
