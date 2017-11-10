@@ -61,13 +61,13 @@ passport.serializeUser(function (id, done) {
 passport.deserializeUser(function (id, done) {
     app.get('db').find_session_user([id])
         .then((user) => {
-            return done(null, user[0]); // put on req.user for BACK end use
+            return done(null, user[0]); // put on req.user for BACKEND use
         })
 })
 
 app.get('/auth', passport.authenticate('auth0'));
 app.get('/auth/callback', passport.authenticate('auth0', {
-    successRedirect: '/#/home',
+    successRedirect: 'http://localhost:3000/#/home',
     failureRedirect: '/auth'
 }))
 app.get('/auth/me', (req, res) => {
@@ -79,10 +79,8 @@ app.get('/auth/me', (req, res) => {
 })
 app.get('/auth/logout', (req, res) => {
     req.logOut();
-    res.redirect(308, 'http://localhost:3000');
+    res.redirect(308, '/');
 })
-
-//nodemailer
 
 //endpionts
 app.post('/message/submit', (req, res) => {
@@ -104,6 +102,26 @@ app.post('/message/submit', (req, res) => {
     });
 
     db.create_message([req.user.user_id, parentsFirstName, parentsLastName, parentsEmail, parentsPhone, studentsName, message]).then((response) => console.log(response));
+})
+
+app.get('/calendar/month/:month', (req, res) => {
+    const db = app.get('db');
+    db.get_distinct_days([req.params.month]).then((response) => res.send(response));
+})
+
+app.get('/calendar/day/:day/:month', (req, res) => {
+    const db = app.get('db');
+    db.get_distinct_times([req.params.day, req.params.month]).then((response) => res.send(response));
+})
+
+app.post('/calendar/submit', (req, res) => {
+    const db = app.get('db');
+    console.log(req.body)
+    const { month, day, time } = req.body; 
+    db.create_booking([ req.user.user_id, month, day, time ]).then(response => {
+        db.delete_time([req.body.time_id])
+    })
+    .catch(err => console.log(err))
 })
 
 app.listen(PORT, () => { console.log(`Server listening on port: ${PORT}.`); });

@@ -15,7 +15,7 @@ export default class Footer extends Component {
                     801.867.0109
                 </div>
                 <div className='email_container'>
-                    marknielsen7@outlook.com
+                    mark.nielsen@customcollegeprep.com
                 </div>
                 <div className='social_media_container'>
                     <a href='http://facebook.com'>

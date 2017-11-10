@@ -32,6 +32,7 @@ export default class Contact extends Component {
             message: this.state.message
         }
         axios.post('/message/submit', body)
+        alert('Thank you! Your message has been sent.')
     }
 
     render() {
@@ -105,7 +106,8 @@ export default class Contact extends Component {
                     </label>
                     <input 
                         type='submit' 
-                        value='Send me a message!'                                         id='message_submit_button'/>
+                        value='Send me a message!'
+                        id='message_submit_button'/>
                 </form>
                 
             </div>
