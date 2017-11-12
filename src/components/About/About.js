@@ -9,7 +9,7 @@ export default class About extends Component {
 
                 <div className='about_top_container'>
                     <h1 className='about_top_how'>HOW I HELP YOU GET RESULTS</h1>
-                    <p className='about_top_first_p'>I have provided tutoring to hundreds of students in Math, Science, and the ACT over the last ten years. I've learned that the students and the teachers attitudes towards these subjects is most the battle.</p>
+                    <p className='about_top_first_p'>I have provided tutoring to hundreds of students in Math, Science, and the ACT over the last ten years. I've learned that the attitude of the student and the teacher towards these subjects is most the battle.</p>
                     <p>Does your student hate math? Do you? I empathize. As a middle school student in Sandy, Utah I hated geometry and thought I wasn't good at it. It took me a long time to figure out that I loved geometry and that I had a talent for it. So what was the problem when I was younger? My teacher hated math. When I was a middle school teacher I encountered students with math anxiety every year. Let me help your student discover that math isn't scary and that anyone can do it. </p>
                 </div>
 

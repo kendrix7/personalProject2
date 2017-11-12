@@ -43,7 +43,7 @@ export default class Contact extends Component {
                     <div className='contact_top_inner_box'>
                         <h2>CONTACT</h2>
                         <div className='contact_top_text_box'>
-                            <p className='contact_days'>MONDAY - FIRDAY</p><p>6pm - 8pm MST</p>
+                            <p className='contact_days'>MONDAY - FRIDAY</p><p>6pm - 8pm MST</p>
                         </div>
                         <div className='contact_top_text_box'>
                             <p className='contact_days'>SATURDAY - SUNDAY</p><p>9am - 12pm MST</p>

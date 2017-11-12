@@ -56,8 +56,9 @@
 
  .contact_form_container {
      width: 100%;
-     background-color: #fdfefd;
-     color: #0b132b;
+     height: 80vh;
+     background-color: #0b132b;
+     color: #fdfefd;
 
      display: flex;
      flex-direction: column;
@@ -66,7 +67,10 @@
  }
 
  .contact_form_label {
-     width: 335px;
+     width: 270px;
+     height: 45px;
+     font-weight: 600;
+     margin-top: 20px;
 
 
      display: flex;
@@ -74,12 +78,43 @@
  }
 
  .contact_form_input_field {
+     width: 270px;
      border-style: solid;
      border-color: #0b132b;
      border-width: 1px;
-     margin-left: 10px;
+
+     margin-top: 10px;
  }
 
  #message_submit_button {
-    
+    width: 270px;
+    height: 60px;
+    margin: auto;
+    display: block;
+    background-color: rgb(255, 123, 0);
+    border-radius: 5px;
+    border-width: 0;
+    text-decoration: none;
+    color: #fdfefd;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fdfefd;
  }
+
+ @media (min-width: 600px) {
+    
+}
+    
+@media (min-width: 900px) {
+        
+}
+    
+@media (min-width: 1200px) {
+        
+}
+    
+@media (min-width: 1800px) {
+        
+}

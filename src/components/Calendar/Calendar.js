@@ -62,52 +62,58 @@ export default class Calendar extends Component {
         console.log(this.state)
 
         const day = this.state.month ? this.state.day_results.map((obj, i) => {
-            return <option key={i}>{obj.day}</option>
+            return <option key={i} className='calendar_option'>{obj.day}</option>
         }) : null;
 
         const time = this.state.day ? this.state.time_results.map((obj, i) => {
-            return <option key={i}>{obj.time}</option>
+            return <option key={i} className='calendar_option'>{obj.time}</option>
         }) : null;
 
         const submit_button = this.state.complete ? 
-            <button onClick={this.handleSubmit}>button
-
+            <button 
+                onClick={this.handleSubmit}
+                className='calendar_submit_button'>
+            Book Time
             </button> :
              null;
 
         return (
             <div>
 
-                <form>
-                    <label>
+                <form className='calendar_form_container'>
+                    <label className='calendar_label'>
                         <select
                             value={this.state.month}
                             onChange={this.handleMonthSelect}
-                            className='calendar_select_month'>
-                            <option>Month</option>
-                            <option>Jan</option>
-                            <option>Feb</option>
-                            <option>Mar</option>
-                            <option>Apr</option>
-                            <option>May</option>
-                            <option>Jun</option>
-                            <option>Jul</option>
-                            <option>Aug</option>
-                            <option>Sep</option>
-                            <option>Oct</option>
-                            <option>Nov</option>
-                            <option>Dec</option>
+                            className='calendar_select'>
+                            <option className='calendar_option'>Month</option>
+                            <option className='calendar_option'>Jan</option>
+                            <option className='calendar_option'>Feb</option>
+                            <option className='calendar_option'>Mar</option>
+                            <option className='calendar_option'>Apr</option>
+                            <option className='calendar_option'>May</option>
+                            <option className='calendar_option'>Jun</option>
+                            <option className='calendar_option'>Jul</option>
+                            <option className='calendar_option'>Aug</option>
+                            <option className='calendar_option'>Sep</option>
+                            <option className='calendar_option'>Oct</option>
+                            <option className='calendar_option'>Nov</option>
+                            <option className='calendar_option'>Dec</option>
                         </select>
                     </label>
-                    <label>
-                        <select onChange={this.handleDaySelect}>
-                            <option>Day</option>
+                    <label className='calendar_label'>
+                        <select 
+                            onChange={this.handleDaySelect}
+                            className='calendar_select'>
+                            <option className='calendar_option'>Day</option>
                             {day}
                         </select>
                     </label>
-                    <label>
-                        <select onChange={this.handleTimeSelect}>
-                            <option>Time</option>
+                    <label className='calendar_label'>
+                        <select 
+                            onChange={this.handleTimeSelect}
+                            className='calendar_select'>
+                            <option className='calendar_option'>Time</option>
                             {time}
                         </select>
                     </label>
