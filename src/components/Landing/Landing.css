@@ -6,8 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .landing_title {
@@ -50,9 +49,13 @@ a {
 }
 
 @media (min-width: 1200px) {
+    .landing_title {
+        width: 600px;
+        font-size: 4em;
+        text-align: center;
+    }
     
-}
-
-@media (min-width: 1800px) {
-    
+    .landing_sign_in_button {
+        margin-bottom: 100px;
+    }
 }
