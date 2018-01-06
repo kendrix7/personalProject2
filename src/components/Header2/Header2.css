@@ -1,13 +1,14 @@
 
-.header_main_container {
+.header2_main_container {
     width:100%;
     height: 10vh;
+    background: #fdfefd;
+
     display:flex;
     align-items: center;
-    background: #fdfefd;
 }
 
-.header_content {
+.header2_content {
     width: 100%;
     height: 100%;
 
@@ -16,10 +17,14 @@
     align-items: center;
 }
 
+.logo_home_button_container_link {
+    width: 30%;
+}
+
 .logo_home_button {
-    width: 273px;
-    height: 80%;
-    padding-left: 9px;
+    width: 100%;
+    height: 8vh;
+    padding-left: 20px;
 
     display: flex;
     flex-direction: row;
@@ -27,8 +32,8 @@
     align-items: center;
 }
 
-.header_logo_button_content {
-    width: 100px;
+.header2_logo_button_content {
+    width: 30%;
     height: 90%;
     color: rgb(255, 123, 0);
     font-size: 2.5em;
@@ -42,21 +47,23 @@
     align-items: center;
 }
 
-.header_logo_text {
+.header2_logo_text {
     color: #bf3100;
-    font-size: 1em;
+    font-size: 2em;
     font-weight: 600;
 }
 
-.hamburger_menu {
-    width: 14%;    
-    height: 80%;
+.links_container {
+    width: 50%;
+    height: 8vh;
+    margin-right: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@media (min-width: 600px) {
-    
-}
-    
-@media (min-width: 900px) {
-        
+.link {
+    font-size: 1.5em;
+    color: #0b132b;
 }

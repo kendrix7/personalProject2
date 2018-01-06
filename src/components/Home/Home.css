@@ -165,9 +165,7 @@
 }
     
  @media (min-width: 1200px) {
-        
-}
-    
-@media (min-width: 1800px) {
-        
+    .home_top_container {
+        background-image: url(../../assets/marker_table.jpg);
+    }
 }
