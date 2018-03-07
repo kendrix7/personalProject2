@@ -165,7 +165,17 @@
 }
     
  @media (min-width: 1200px) {
+    .home_main_container{
+        justify-content: space-around;
+    } 
     .home_top_container {
+        width: 80%;
         background-image: url(../../assets/marker_table.jpg);
+        align-self: center;
+    }
+    .home_about_container {
+        width: 80%;
+        align-self: center;
+        margin-bottom: 20PX;
     }
 }
