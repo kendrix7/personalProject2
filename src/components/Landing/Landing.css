@@ -16,6 +16,8 @@
     font-size: 3em;
     font-weight: 600;
     color: #fdfefd;
+    opacity: .85;
+    text-shadow: 2px 2px #141414;
 }
 
 .landing_sign_in_button {
