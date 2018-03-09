@@ -35,6 +35,7 @@
     font-weight: 600;
     border-style: solid;
     border-color: #383d3b;
+    text-shadow: 1px 1px #141414;
 
     display: flex;
     flex-direction: column;
@@ -46,11 +47,17 @@
     color: #bf3100;
     font-size: 1em;
     font-weight: 600;
+    margin-left: 10px;
+    text-shadow: .25px .25px #141414;
 }
 
 .hamburger_menu {
     width: 14%;    
     height: 80%;
+}
+
+@media (min-width: 414px) {
+
 }
 
 @media (min-width: 600px) {
