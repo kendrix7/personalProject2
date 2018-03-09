@@ -6,7 +6,7 @@
 .home_top_container {
    height: 80vh;
    width: 100%;
-   background-image: url(../../assets/landing_home.jpg);
+   background-image: url(../../assets/home_375.jpg);
    background-size: cover;
 
    display: flex;
@@ -169,14 +169,12 @@
         
 }
     
- @media (min-width: 1200px) {
+@media (min-width: 1280px) {
     .home_main_container{
         justify-content: space-around;
     } 
     .home_top_container {
-        width: 80%;
-        background-image: url(../../assets/marker_table.jpg);
-        align-self: center;
+        background-image: url(../../assets/marker_table_cropped_1280.jpg);
     }
     .home_about_container {
         width: 80%;

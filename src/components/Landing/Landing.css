@@ -1,7 +1,7 @@
 .landing_top_container {
     width:100%;
     height: 80vh;
-    background-image: url(../../assets/test.jpg);
+    background-image: url(../../assets/landing_1024.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -50,7 +50,10 @@ a {
     
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
+    .landing_top_container{
+        background-image: url(../../assets/landing_1280.jpg);
+    }
     .landing_title {
         width: 600px;
         font-size: 4em;
