@@ -82,3 +82,12 @@
 @media (min-width: 1360) {
 
 }
+
+@media (min-width: 1920px) {
+    .logo_home_button {
+        margin-left: 10PX;
+    }
+    .header2_logo_text {
+        margin-right: 75px;
+    }
+}

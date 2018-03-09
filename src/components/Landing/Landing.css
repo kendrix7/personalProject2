@@ -45,7 +45,12 @@ a {
 }
 
 @media (min-width: 600px) {
-
+    .landing_top_container {
+        height: 100vh;
+    }
+    .landing_sign_in_button {
+        margin-bottom: 30px;
+    }
 }
 
 @media (min-width: 900px) {

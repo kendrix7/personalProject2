@@ -81,11 +81,15 @@
 }
 
 @media (min-width: 600px) {
-    
+    .footer_main_container {
+        height: 45vh;
+    }
 }
     
 @media (min-width: 900px) {
-        
+    .footer_main_container {
+        height: 30vh;
+    }
 }
     
 @media (min-width: 1200px) {

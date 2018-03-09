@@ -39,5 +39,8 @@
     .about_top_container {
         width: 90%;
 
-    }  
+    }
+    .about_main_container p {
+        width: 80%;
+    }
 }

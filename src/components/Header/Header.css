@@ -61,7 +61,12 @@
 }
 
 @media (min-width: 600px) {
-    
+    .header_main_container {
+        height: 15vh;
+    }
+    .header_logo_button_content {
+        font-size: 2em;
+    }
 }
     
 @media (min-width: 900px) {
