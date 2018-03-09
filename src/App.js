@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     let width = window.innerWidth;
 
-    if (width < 1199) {
+    if (width < 1024) {
       return (
         <HashRouter>
           <MuiThemeProvider>
