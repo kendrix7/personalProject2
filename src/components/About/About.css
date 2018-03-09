@@ -36,5 +36,8 @@
 }
     
 @media (min-width: 1200px) {
-        
+    .about_top_container {
+        width: 90%;
+
+    }  
 }

@@ -112,7 +112,9 @@
 }
     
 @media (min-width: 1200px) {
-        
+    .contact_top_container {
+        background-image: url(../../assets/marker_table_cropped_1280.jpg);
+    }
 }
     
 @media (min-width: 1800px) {

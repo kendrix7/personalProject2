@@ -13,12 +13,15 @@
     height: 100%;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .logo_home_button_container_link {
     width: 30%;
+
+    border: solid 2px red;
+
 }
 
 .logo_home_button {
@@ -30,6 +33,9 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    border: solid 2px red;
+
 }
 
 .header2_logo_button_content {
@@ -46,6 +52,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    border: solid 2px red;
+
 }
 
 .header2_logo_text {
@@ -53,20 +62,31 @@
     font-size: 2em;
     font-weight: 600;
     text-shadow: 1px 1px #141414;
+
+    border: solid 2px red;
+
 }
 
 .links_container {
-    width: 50%;
+    width: 40%;
     height: 8vh;
     margin-right: 20px;
 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    border: solid 2px red;
+
 }
 
 .link {
     font-size: 1.6em;
     color: #0b132b;
     font-weight: 550;
+    text-align: right;
+
+    align-self: center;
+    flex-grow: 1;
+
+    border: solid 2px red;
+
 }
