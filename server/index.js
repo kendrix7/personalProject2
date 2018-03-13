@@ -39,7 +39,6 @@ passport.use(new Auth0Strategy({
     db.find_user([userData.identities[0].user_id])
         .then((user) => {
             if (user[0]) {
-                // console.log(user[0]);
                 return done(null, user[0].user_id);
             } else {
                 db.create_user([
